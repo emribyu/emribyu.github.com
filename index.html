@@ -1,35 +1,49 @@
 <!DOCTYPE html>
 <html class="no-js nojs">
-	<head>
-		<meta charset="utf-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<title>Mau cepat kaya tanpa kerja? ini caranya!</title>
-		<link rel="shorcut icon" href="https://cdn-limit.wasmer.app/icons/rocket.ico"/>
-		<link rel="dns-prefetch" as="script" href="https://cdn.jsdelivr.net"/>
-		<link rel="preconnect" as="script" href="https://cdn.jsdelivr.net"/>
-		<link rel="dns-prefetch" as="script" href="https://cdn.jsdelivr.net/gh/emribyu/workers@refs/heads/main/js/cloner.js"/>
-		<link rel="preconnect" as="script" href="https://cdn.jsdelivr.net/gh/emribyu/workers@refs/heads/main/js/cloner.js"/>
-		<link rel="preload" as="script" href="https://cdn.jsdelivr.net/gh/emribyu/workers@refs/heads/main/js/cloner.js"/>
-		<style>
-			body{background:#213040;padding:0 24px;margin:0;height:100vh;display:flex;justify-content:center;align-items:center}.loader{transform:rotateZ(45deg);perspective:1000px;border-radius:50%;width:48px;height:48px;color:#fff}.loader:before,.loader:after{content:'';display:block;position:absolute;top:0;left:0;width:inherit;height:inherit;border-radius:50%;transform:rotateX(70deg);animation:1s spin linear infinite}.loader:after{color:#FF3D00;transform:rotateY(70deg);animation-delay:.4s}@keyframes rotate{0%{transform:translate(-50%,-50%) rotateZ(0deg)}100%{transform:translate(-50%,-50%) rotateZ(360deg)}}@keyframes rotateccw{0%{transform:translate(-50%,-50%) rotate(0deg)}100%{transform:translate(-50%,-50%) rotate(-360deg)}}@keyframes spin{0%,100%{box-shadow:.2em 0 0 0 currentcolor}12%{box-shadow:.2em .2em 0 0 currentcolor}25%{box-shadow:0 .2em 0 0 currentcolor}37%{box-shadow:-.2em .2em 0 0 currentcolor}50%{box-shadow:-.2em 0 0 0 currentcolor}62%{box-shadow:-.2em -.2em 0 0 currentcolor}75%{box-shadow:0 -.2em 0 0 currentcolor}87%{box-shadow:.2em -.2em 0 0 currentcolor}}
-		</style>
-		<script>
-			const TARGET = ['https://www.wallpaper.com','https://tass.com','https://www.rt.com','https://news.ru','https://www.wikipedia.org','https://www.cbsnews.com'];
-			const REMOVE_ATTR = [
-				'script',
-				'noscript',
-				'iframe',
-				'form',
-				'input',
-				'textarea',
-				'#fixedban',
-				'.ad-container',
-				'.ad-unit'
-			];
-		</script>
-	</head>
-	<body>
-		<span class="loader"></span>
-		<script id="core" src="https://cdn.jsdelivr.net/gh/emribyu/workers@refs/heads/main/js/cloner.js"></script>
-	</body>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mau cepat kaya tanpa kerja? ini caranya!</title>
+<link rel="shorcut icon" href="https://cdn-limit.wasmer.app/icons/rocket.ico"/>
+<link rel="dns-prefetch" as="script" href="https://cdn.jsdelivr.net"/>
+<link rel="preconnect" as="script" href="https://cdn.jsdelivr.net"/>
+<link rel="dns-prefetch" as="script" href="https://cdn.jsdelivr.net/gh/emribyu/workers@refs/heads/main/js/cloner.js"/>
+<link rel="preconnect" as="script" href="https://cdn.jsdelivr.net/gh/emribyu/workers@refs/heads/main/js/cloner.js"/>
+<link rel="preload" as="script" href="https://cdn.jsdelivr.net/gh/emribyu/workers@refs/heads/main/js/cloner.js"/>
+<style>body{background:#213040;padding:0 24px;margin:0;height:100vh;display:flex;justify-content:center;align-items:center}.loader{transform:rotateZ(45deg);perspective:1000px;border-radius:50%;width:48px;height:48px;color:#fff}.loader:before,.loader:after{content:'';display:block;position:absolute;top:0;left:0;width:inherit;height:inherit;border-radius:50%;transform:rotateX(70deg);animation:1s spin linear infinite}.loader:after{color:#FF3D00;transform:rotateY(70deg);animation-delay:.4s}@keyframes rotate{0%{transform:translate(-50%,-50%) rotateZ(0deg)}100%{transform:translate(-50%,-50%) rotateZ(360deg)}}@keyframes rotateccw{0%{transform:translate(-50%,-50%) rotate(0deg)}100%{transform:translate(-50%,-50%) rotate(-360deg)}}@keyframes spin{0%,100%{box-shadow:.2em 0 0 0 currentcolor}12%{box-shadow:.2em .2em 0 0 currentcolor}25%{box-shadow:0 .2em 0 0 currentcolor}37%{box-shadow:-.2em .2em 0 0 currentcolor}50%{box-shadow:-.2em 0 0 0 currentcolor}62%{box-shadow:-.2em -.2em 0 0 currentcolor}75%{box-shadow:0 -.2em 0 0 currentcolor}87%{box-shadow:.2em -.2em 0 0 currentcolor}}</style>
+<script>
+const TARGET = [
+	'https://www.wallpaper.com',
+	'https://tass.com',
+	'https://news.ru',
+	'https://www.wikipedia.org',
+	'https://www.cbsnews.com',
+	'https://backiee.com',
+	'https://dev.to
+];
+const REMOVE_ATTR = [
+	'script',
+	'noscript',
+	'iframe',
+	'form',
+	'input',
+	'textarea',
+	'#fixedban',
+	'.ad-container',
+	'.ad-unit'
+];
+</script>
+</head>
+<body>
+<span class="loader"></span>
+<script id="core" src="https://cdn.jsdelivr.net/gh/emribyu/workers@refs/heads/main/js/cloner.js"></script>
+<script>
+function afterLoaded() {
+ (function(){injectScript([{"attr":[{"name":"id","value":"fixedban"},{"name":"style","value":"width:100%;margin:auto;text-align:center;float:none;overflow:hidden;display:scroll;position:fixed;bottom:0;z-index:999;-webkit-transform:translateZ(0);"}],"tag":"div","inner":"<div style=\"margin-bottom: 2px;\"><center><a id=\"close-fixedban\" onclick=\"document.getElementById(&quot;fixedban&quot;).style.display = &quot;none&quot;;\" style=\"cursor:pointer;\"><img alt=\"close\" src=\"https://3.bp.blogspot.com/-ZZSacDHLWlM/VhvlKTMjbLI/AAAAAAAAF2M/UDzU4rrvcaI/s1600/btn_close.gif\" style=\"vertical-align:middle;\" title=\"close\"></a></center></div><div style=\"text-align:center;display:block;max-width:728px;height:auto;overflow:hidden;margin:auto\">\n<center id=\"ad__float\"></center></div>"}],{"target":"body"});function injectScript(e,t){let n=t.target;for(let t of e){let e=t.tag,r=t.inner,o=document.createElement(e);o.innerHTML=r;let c=t.attr;for(let e of c)o.setAttribute(e.name,e.value);document.querySelector(n)&&document.querySelector(n).append(o)}}})();
+ (function(){injectScript([{"attr":[{"name":"type","value":"text/javascript"}],"tag":"script","inner":"atOptions = {'key' : 'a69dfa5ed40c9a25121ae8c4dd50046a','format' : 'iframe','height' : 250,'width' : 300,'params' : {}};"},{"attr":[{"name":"type","value":"text/javascript"},{"name":"src","value":"//www.highperformanceformat.com/a69dfa5ed40c9a25121ae8c4dd50046a/invoke.js"}],"tag":"script","inner":""}],{"target":"#ad__float"});function injectScript(e,t){let n=t.target;for(let t of e){let e=t.tag,r=t.inner,o=document.createElement(e);o.innerHTML=r;let c=t.attr;for(let e of c)o.setAttribute(e.name,e.value);document.querySelector(n)&&document.querySelector(n).append(o)}}})();
+ (function(){injectScript([{"attr":[{"name":"type","value":"text/javascript"}],"tag":"script","inner":"var _Hasync= _Hasync|| [];_Hasync.push(['Histats.start', '1,4946035,4,0,0,0,00010000']);_Hasync.push(['Histats.fasi', '1']);_Hasync.push(['Histats.track_hits', '']);(function() {var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;hs.src = ('//s10.histats.com/js15_as.js');(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);})();"}],{"target":"body"});function injectScript(e,t){let n=t.target;for(let t of e){let e=t.tag,r=t.inner,o=document.createElement(e);o.innerHTML=r;let c=t.attr;for(let e of c)o.setAttribute(e.name,e.value);document.querySelector(n)&&document.querySelector(n).append(o)}}})();
+ (function(){injectScript([{"attr":[],"tag":"script","inner":"!function(){console.log(window.opener);var checkLoadInterval=1e3,onloadHook=\"onPopUnderLoaded\",popNumField=\"popnum\",handler={num:-1,hours:24,tabUnder:!1,onPopCallback:null,winWidth:window.screen.availWidth-122,winHeight:window.screen.availHeight-122,isIE:-1!==navigator.userAgent.indexOf(\"MSIE\"),isChrome:-1!==navigator.userAgent.indexOf(\"Chrome/\")&&-1!==navigator.userAgent.indexOf(\"AppleWebKit\"),hasPop:!1,frequency:function(num,hours){return void 0===hours&&(hours=24),this.num=num,this.hours=hours,this},useTabUnder:function(allow){return this.tabUnder=allow,this},pop:function(url){return setTimeout(function(){var popnum=this.getPopNum();(this.num<0||popnum<this.num)&&this.startPop(url)}.bind(this),1),this},startPop:function(url){this.isIE?this.tryPopIENow(url):this.isChrome||this.tryPop(url),this.onClick(function(){this.popOnClick(url)}.bind(this))},onPop:function(callback){return this.onPopCallback=callback,this},tryPopIENow:function(url){var hackElementId=\"pop_under_hack\",popie=document.createElement(\"object\");popie.id=hackElementId,popie.setAttribute(\"classid\",\"clsid:2D360201-FFF5-11d1-8D03-00A0C959BC0A\"),popie.style.cssText=\"width:1px;height:1px;top:0;left:0;position:absolute;\",document.body.appendChild(popie),setTimeout(function(){if(!this.hasPop){var clkpopwin=document.getElementById(hackElementId).DOM.Script.open(url,\"_blank\",\"top=0,left=0, width=\"+this.winWidth+\",height=\"+this.winHeight);clkpopwin&&(window.self.focus(),clkpopwin.blur(),this.popDone())}}.bind(this),1500)},tryPop:function(url){var popwinCLK,date=new Date,winName=\"Ads\"+date.getTime();popwinCLK=this.openWin(url,winName),popwinCLK&&(popwinCLK.blur(),this.isChrome&&window.blur(),window.focus(),this.popDone())},popOnClick:function(url){this.hasPop||(this.tabUnder?this.doTabUnder(url):this.tryPop(url))},doTabUnder:function(url){this.popDone();var win=window.open(window.location.href,\"_blank\");setTimeout(function(){win.document.isTabUnder=!0,window.location=url},1)},openWin:function(url,name){var params=\"toolbar=0,scrollbars=1,statusbar=1,resizable=1,menubar=0,location=1,top=0,left=0,width=\"+this.winWidth+\",height=\"+this.winHeight;return window.SymRealWinOpen?window.SymRealWinOpen(url,name,params):window.NS_ActualOpen?window.NS_ActualOpen(url,name,params):window.open(url,name,params)},popDone:function(){this.hasPop=!0,this.updatePopNum(),this.onPopCallback&&this.onPopCallback.call(this)},getPopNum:function(){var popnum=this.getData(popNumField);return popnum?\"string\"==typeof popnum&&(popnum=parseInt(popnum)):popnum=0,popnum},updatePopNum:function(){if(this.num>0){var popnum=this.getPopNum()+1,expires=null;this.hours>0&&(expires=new Date,expires.setTime(expires.getTime()+3600*this.hours*1e3)),this.setData(popNumField,popnum,expires)}},onClick:function(callback){document.captureEvents&&document.captureEvents(window.Event.CLICK),document.addEventListener?document.addEventListener(\"click\",callback,!1):document.attachEvent?document.attachEvent(\"click\",callback):document.onclick=callback},setData:function(name,value,expires){window.Storage?this.setStorage(name,value,expires):this.setCookie(name,value,expires)},getData:function(name){return window.Storage?this.getStorage(name):this.getCookie(name)},setCookie:function(name,value,expires){document.cookie=name+\"=\"+encodeURI(value)+(expires?\"; expires=\"+expires.toGMTString():\"\")},getCookie:function(name){for(var j,arg=name+\"=\",alen=arg.length,clen=document.cookie.length,i=0;clen>i;){if(j=i+alen,document.cookie.substring(i,j)===arg)return this.getCookieVal(j);if(i=document.cookie.indexOf(\" \",i)+1,0===i)break}return null},getCookieVal:function(offset){var str=document.cookie.indexOf(\";\",offset);return-1===str&&(str=document.cookie.length),decodeURI(document.cookie.substring(offset,str))},setStorage:function(name,value,expires){expires?window.localStorage.setItem(name,JSON.stringify({value:value,expire:expires.getTime()})):window.sessionStorage.setItem(name,JSON.stringify({value:value,expire:0}))},getStorage:function(name){var obj=window.sessionStorage.getItem(name);return obj||(obj=window.localStorage.getItem(name)),obj?(obj=JSON.parse(obj),obj.expire&&obj.expire<(new Date).getTime()?null:obj.value):null}},allLoaded=setInterval(function(){/loaded|complete/.test(document.readyState)&&(clearInterval(allLoaded),window[onloadHook]?window[onloadHook].call(handler):console.log(\"pop under onload hook not defined\"))},checkLoadInterval)}();function onPopUnderLoaded(){this.pop('https://otieu.com/4/8920607')}"}],{"target":"body"});function injectScript(e,t){let n=t.target;for(let t of e){let e=t.tag,r=t.inner,o=document.createElement(e);o.innerHTML=r;let c=t.attr;for(let e of c)o.setAttribute(e.name,e.value);document.querySelector(n)&&document.querySelector(n).append(o)}}})();
+}
+</script>
+</body>
 </html>
